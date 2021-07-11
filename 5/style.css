@@ -108,3 +108,90 @@
   content: "\f00e";
   transform: translateY(-6%);
 }
+
+.before-icon::before {
+  display: inline-block;
+  margin-right: 0.3em;
+  color: #e25c00;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+.before-icon--pdf::before {
+  content: "\f1c1";
+}
+
+.before-icon--excel::before {
+  content: "\f1c3";
+}
+
+.before-icon--power-point::before {
+  content: "\f1c4";
+}
+
+.before-icon--check-square::before {
+  content: "\f14a";
+}
+
+.before-icon--chevron-left::before {
+  content: "";
+  width: 0.375em;
+  height: 0.375em;
+  border-bottom: 0.125em solid #e25c00;
+  border-left: 0.125em solid #e25c00;
+  transform: rotate(45deg) translateY(-30%);
+}
+
+.after-icon::after {
+  display: inline-block;
+  margin-left: 0.3em;
+  color: #e25c00;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.after-icon--chevron-right::after {
+  content: "";
+  width: 0.375em;
+  height: 0.375em;
+  border-top: 0.125em solid #e25c00;
+  border-right: 0.125em solid #e25c00;
+  transform: rotate(45deg) translateY(-30%);
+}
+
+.label {
+  display: inline-block;
+  padding: 0.2em 0.3em;
+  background-color: #e25c00;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border: 2px solid transparent;
+}
+
+.label--warning {
+  background-color: #f1de00;
+  color: #000;
+}
+
+.label--link {
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.label--link:focus,
+.label--link:hover {
+  background-color: #fff;
+  border-color: currentColor;
+  color: #e25c00;
+}
+
+.rounded-label {
+  display: inline-block;
+  padding: 0.3em 0.9em;
+  background-color: #e25c00;
+  border-radius: 1em;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
