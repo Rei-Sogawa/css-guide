@@ -1,3 +1,13 @@
+.container {
+  width: 720px;
+  margin: 16px auto 0;
+}
+
+.container > * {
+  margin-bottom: 16px;
+  display: block;
+}
+
 .btn {
   display: inline-block;
   width: 300px;
@@ -194,4 +204,68 @@
   color: #fff;
   font-size: 0.75rem;
   font-weight: bold;
+}
+
+.level1-heading {
+  padding: 30px 10px;
+  background-color: #e25c00;
+  color: #fff;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.level1-heading__inner {
+  position: relative;
+  display: inline-block;
+  transform: translateY(-20%);
+}
+
+.level1-heading__inner::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 80px;
+  height: 1px;
+  background-color: currentColor;
+  transform: translateX(-50%);
+}
+
+.level2-heading {
+  padding-bottom: 10px;
+  border-bottom: 4px solid #e25c00;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.level3-heading {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e25c00;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.level4-heading {
+  padding-left: 6px;
+  border-left: 2px solid #e25c00;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.level5-heading {
+  color: #e25c00;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.level6-heading {
+  font-size: 1.125rem;
+}
+
+.caution-text {
+  color: #d40152;
+}
+
+.note-text {
+  font-size: 0.75rem;
 }
